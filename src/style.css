@@ -1,5 +1,6 @@
 :root {
   --branding-color: #D7CACA;
+  --branding-secundary-color: #A07070;
   --soft-color: rgba(215, 202, 202, 0.4);
   --heading-font-family: 'Poppins',
     sans-serif;
@@ -19,10 +20,11 @@ h2 {
 }
 
 p {
-  font-family: var(--default-font-family);
-  font-size: 14px;
-  line-height: 25px;
+  font-family: var(--heading-font-family);
+  font-size: 13px;
+  line-height: 22px;
 }
+
 
 
 .hero {
@@ -43,43 +45,69 @@ p {
 
 
 .hero h2 {
-  line-height: 2;
   font-size: 20px;
 
 }
 
+.project-wrapper {
+  background: var(--branding-color);
+}
+
 .btn-branding {
   background: var(--branding-color);
-  font-size: 16px;
+  font-size: 30px;
   font-family: var(--heading-font-family);
-  line-height: 27px;
+  letter-spacing: 3px;
   font-weight: bold;
   color: black;
   border-radius: 4px;
-  padding: 10px 30px;
+  padding: 15px 60px;
 }
 
 
 .btn-branding:hover {
- background: black;
- color: #D7CACA;
+ background: var(--branding-secundary-color);
+ color: #ffffff;
 }
 
 
 .btn-light {
     font-size: 12px;
+    text-transform: uppercase;
     background-color: white;
     font-family: var(--heading-font-family);
     line-height: 20px;
-    color: var(--branding-color);
-    border: solid 2px var(--branding-color);
+    color: var(--branding-secundary-color);
+    border: solid 2px var(--branding-secundary-color);
     border-radius: 2px;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
 }
 
-@media (max-width: 900px) {
+.btn-light:hover {
+  background: var(--branding-color);
+  color: black;
+}
+
+
+.project-description {
+  padding: 120px 60px;
+}
+
+.projects-title {
+  text-transform: uppercase;
+  font-family: var(--heading-font-family);
+  letter-spacing: 4px;
+  background: var(--soft-color);
+  padding: 40px;
+}
+
+
+
+@media (max-width: 800px) {
+
   h1 {
-    font-size: 38px;
+    font-size: 35px;
   }
 
     .hero p {
@@ -93,6 +121,23 @@ p {
 
     .hero{
       padding: 80px 20px;    
+    }
+
+    .btn-branding {
+      border-radius: 4px;
+      padding: 12px 40px;
+      font-size: 16px;
+    }
+
+    .btn-light {
+        font-size: 9px;
+        border-radius: 2px;
+        padding: 4px 15px;
+        }
+
+    .project-description {
+      padding: 0;
+      text-align: center;
     }
 
 }
