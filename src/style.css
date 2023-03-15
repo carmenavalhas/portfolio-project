@@ -23,9 +23,13 @@ p {
 
 
 .hero {
+  margin: 0 aut0;
   text-align: center;
   padding: 160px 20px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/872/original/background_.png?1678901927");
+  background-size: cover;
 }
+
 
 .hero p {
     font-family: var(--default-font-family);
