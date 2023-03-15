@@ -15,19 +15,23 @@ h1 {
 
 h2 {
   font-family: var(--default-font-family);
+  font-size: 26px;
 }
 
 p {
   font-family: var(--default-font-family);
+  font-size: 14px;
+  line-height: 25px;
 }
 
 
 .hero {
-  margin: 0 aut0;
+  margin: 0 auto;
   text-align: center;
   padding: 160px 20px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/872/original/background_.png?1678901927");
   background-size: cover;
+ 
 }
 
 
@@ -60,4 +64,37 @@ p {
  background: black;
  color: #D7CACA;
 }
+
+
+.btn-light {
+    font-size: 12px;
+    background-color: white;
+    font-family: var(--heading-font-family);
+    line-height: 20px;
+    color: var(--branding-color);
+    border: solid 2px var(--branding-color);
+    border-radius: 2px;
+    padding: 10px 30px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 38px;
+  }
+
+    .hero p {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    .hero h2 {
+      font-size: 16px;
+    }
+
+    .hero{
+      padding: 80px 20px;    
+    }
+
+}
+
 
