@@ -49,6 +49,7 @@ p {
 
 }
 
+
 .project-wrapper {
   background: var(--branding-color);
 }
@@ -89,6 +90,18 @@ p {
   color: black;
 }
 
+#button-light {
+    background: var(--branding-color);
+    border: none;
+    border-radius: 1;
+    padding: 12px 25px;
+}
+
+#button-light:hover {
+  background: var(--branding-secundary-color);
+  color: var(--branding-color);
+}
+
 
 .project-description {
   padding: 120px 60px;
@@ -103,6 +116,24 @@ p {
 }
 
 
+#about-section {
+  padding: 160px 20px;
+}
+
+#about-section h2 {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+#about-section p {
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+
+#work-with-me-button {
+  font-size: 8px;
+  padding: 5px 25px;
+}
 
 @media (max-width: 800px) {
 
@@ -140,6 +171,10 @@ p {
       text-align: center;
     }
 
+    #about-section {
+      text-align: center;
+
 }
 
 
+}
