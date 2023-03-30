@@ -35,31 +35,66 @@
     <title>Carmen Navalhas - Portfolio</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <img src="images/logo.png" alt="" class="logo" />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="hero">
-      <h1>Carmen Navalhas</h1>
-      <h2 class="mb-5">
-        Front-end Developer and Graphic <br />
-        Designer, based in Portugal
-      </h2>
+      <img src="images/logo.png" alt="" class="logo-bigger" />
+
+      <h1 class="mb-2">Carmen Navalhas</h1>
+      <h3 class="mb-5 text-uppercase">
+        Front-end Developer & Graphic Designer, based in Portugal
+      </h3>
+
       <div>
-        <a href="#" class="btn btn-branding">ENTER</a>
+        <a href="/contact.html" class="btn btn-branding">CONTACT ME</a>
       </div>
     </div>
     <p class="projects-title text-center text-muted mb-5">
       Featured projects <i class="fa-solid fa-angles-down"></i>
     </p>
 
-    <div class="container">
+    <div class="container-projects">
       <div class="row">
-        <div class="col-6 mb-5">
-          <img src="images/mockup-app-weather.png" class="img-fluid" alt="" />
+        <div class="col-6 mb-4">
+          <img src="images/app-weather.png" class="img-fluid" alt="" />
         </div>
-        <div class="col-6">
+        <div class="col-6 mt-2 mb-4">
           <div class="project-description">
-            <h3 class="mb-4 mt-4">Weather App</h3>
+            <h3>Weather App</h3>
             <p class="text-muted" id="description">
-              Biscuit lollipop pastry topping liquorice sweet chocolate cake.
-              Powder lollipop biscuit cheesecake halvah.
+              Built with HTML, CSS and JavaScript
             </p>
             <a
               href="https://monumental-cendol-1cb597.netlify.app/"
@@ -70,12 +105,11 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 mb-4">
           <div class="project-description">
-            <h3 class="mb-4">Picasso World Clock</h3>
+            <h3 class="mt-4">Picasso World Clock</h3>
             <p class="text-muted" id="project-description">
-              Biscuit lollipop pastry topping liquorice sweet chocolate cake.
-              Powder lollipop biscuit cheesecake halvah.
+              Built with HTML, CSS and JavaScript
             </p>
             <a
               href="https://myworld-clock.netlify.app/"
@@ -85,9 +119,12 @@
             >
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 mb-4">
           <img src="images/world-clock-mockup.png" class="img-fluid" alt="" />
         </div>
+        <a href="/work.html" class="btn btn-light mt-4 mb-4" id="button-light"
+          >View all projects</a
+        >
       </div>
     </div>
   </body>
