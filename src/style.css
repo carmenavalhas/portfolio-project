@@ -31,13 +31,53 @@ p {
   line-height: 18px;
 }
 
+/* Navigation Bar */
+
+.navbar {
+  background: var(--soft-color) !important;
+  padding: 20px 0;
+}
+
+.navbar-nav {
+  font-family: var(--secondary-font-family);
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 25px;
+
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-item .active {
+  color: var(--branding-secundary-color) !important;
+}
+
+.nav-item a:hover {
+  background: none;
+  transition: all 150ms ease-in-out;
+}
+
+.navbar a:hover {
+  background: none;
+  transform: scale(1.2); 
+}
+
+.logo {
+  max-height: 50px;
+}
+
+.logo-bigger {
+  max-height: 200px;
+}
 
 /* Home page */
 
 .hero {
   margin: 0 auto;
   text-align: center;
-  padding: 150px 20px;
+  padding: 150px 20px 150px 0;
   background-image: url(/images/bg2.png);
   background-size: cover;
 }
@@ -54,20 +94,23 @@ line-height: 15px;
 font-size: 12px;
 }
 
-.project-wrapper {
-  background: var(--branding-color);
-}
-
-
 /* About page */
 
 .about-subheading {
   font-family: var(--secondary-font-family);
 }
 
+.content-container {
+  padding: 20px;
+}
+
+.about-wrapper {
+  padding: 30px 40px;
+}
+
 .contact-box {
   background: var(--soft-color);
-  padding: 20px 50px;
+  padding: 20px 60px;
   margin: 20px auto;
 }
 
@@ -79,12 +122,12 @@ font-size: 12px;
 
 .contact-box p {
   font-family: var(--default-font-family);
-  line-height: 15px;
+  font-size: 13px !important;
+  line-height: 17px;
 }
 
 
-
-/* Contact button */
+/* Main button */
 
 #contact-button {
   font-family: var(--heading-font-family);
@@ -111,7 +154,6 @@ font-size: 12px;
   text-align: center;
   font-family: var(--secondary-font-family);
   font-size: 10px;
-
 }
 
 /* Button light */
@@ -122,7 +164,7 @@ font-size: 12px;
     background-color: white;
     font-family: var(--secondary-font-family);
     color: var(--dark-color);
-    padding: 8px !important;
+    padding: 6px 12px !important;
     border-radius:0% !important;
     border: solid 1px var(--branding-secundary-color);
     letter-spacing: 2px;
@@ -133,14 +175,8 @@ font-size: 12px;
   color: white;
 }
 
-
 #description {
   font-family: var(--default-font-family);
-}
-
-
-.content-container {
-  padding: 50px 40px 10px 40px;
 }
 
 .content h1 {
@@ -149,7 +185,7 @@ font-size: 12px;
 }
 
 .content h2 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 
@@ -161,8 +197,11 @@ font-size: 12px;
   margin: 10px 30px;
 }
 
-
 /* Work page */
+
+.work-wrapper {
+  padding: 40px  40px 0 40px;
+}
 
 #heading-work {
   font-size: 40px;
@@ -197,15 +236,6 @@ font-size: 12px;
   font-family: var(--default-font-family);
 }
 
-#launch-button {
-  font-family: var(--secondary-font-family);
-  padding: 3px 5px;
-  font-size: 8px;
-  letter-spacing: 3px;
-
-}
-
-
 /* Contact page */
 
 .contact-heading {
@@ -219,12 +249,19 @@ font-size: 12px;
 }
 
 .contact-container p {
-  font-family: var(--default-font-family);
+  font-family: var(--secondary-font-family);
+  letter-spacing: 1px;
   font-size: 12px;
 }
 
+.project-wrapper {
+  background: var(--branding-color);
+}
 
-/* Contact page */
+#portfolio-button {
+  padding: 5px 7px;
+  font-size: 8px;
+}
 
 .social a{
   font-size: 20px;
@@ -243,72 +280,29 @@ a {
 }
 
 a:hover {
-background: #ffffff;
-color: #a69b87;
+
+color: var(--dark-color);
 }
 
-#portfolio-button {
-  padding: 5px 7px;
-  font-size: 8px;
-}
-
-.active {
-  color: var(--dark-color) !important;
-}
-
-.navbar {
-  background: var(--branding-secundary-color) !important;
-  padding: 20px 0;
-}
-
-.navbar-nav {
-  font-family: var(--secondary-font-family);
-  font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 25px;
-  
-}
-
-.nav-item {
-  padding: 0 10px;
-}
-
-.nav-item .active {
-  color: var(--branding-color) !important;
-}
-
-.nav-item a:hover {
-  background: none;
-}
-
-.navbar a:hover {
-  background: none;
-}
-
-.logo {
-  max-height: 50px;
-}
-
-.logo-bigger {
-  max-height: 200px;
-}
-
-
+/* Footer */
 
 footer {
-  margin: 0px 30px;
+  background: var(--soft-color);
+  margin: 0px auto;
 }
 
 
 footer p a {
   text-decoration: none;
+  font-family: var(--secondary-font-family);
   color: var(--branding-secundary-color);
-  font-size: 13px;
+  font-size: 12px;
+  letter-spacing: 1px;
   transition: all 150ms ease-in-out;
 }
 
 footer p a:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   color: var(--dark-color);
 }
 
@@ -389,8 +383,6 @@ footer .social-links a:hover {
     text-align: center;
     }
 
-
-
   .content-container {
     text-align: center;
     }
@@ -411,7 +403,6 @@ footer .social-links a:hover {
   footer .contact-box {
     padding: 20px 40px;
     }
-
 }
 
 /* ^^^^ Ending media queries */
