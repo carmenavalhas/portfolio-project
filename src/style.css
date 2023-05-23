@@ -5,18 +5,18 @@
   --dark-color: #a69b87;
   --heading-font-family: 'Aboreto', cursive;
   --default-font-family: 'Baskervville', serif;
-  --secondary-font-family: 'Jost', sans-serif;
+  --secondary-font-family: 'Manrope', sans-serif;
 }
 
 
 h1 {
   font-family: var(--heading-font-family);
-  font-size: 50px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 60px;
 }
 
 h2 {
-  font-family: var(--default-font-family);
+  font-family: var(--heading-font-family);
   font-size: 20px;
 }
 
@@ -27,7 +27,7 @@ h3 {
 
 p {
   font-family: var(--secondary-font-family);
-  line-height: 18px;
+  line-height: 16px;
 }
 
 /* Navigation Bar */
@@ -81,42 +81,67 @@ p {
 
 
 .hero h1 {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .hero h3 {
 font-family: var(--default-font-family);
-letter-spacing: 3px;
+letter-spacing: 1px;
 font-style: italic;
-line-height: 15px;
-font-size: 15px;
+line-height: 20px;
+font-size: 14px;
 }
 
-.coded-by a {
+
+.codedby {
+  margin: 20px;
+}
+
+.codedby p {
+  font-family: var(--secondary-font-family);
   letter-spacing: normal;
+  font-size: 11px;
 }
 
-.coded-by a:hover {
+.codedby a {
+letter-spacing: normal;
+font-size: 11px;
+font-style: normal;  
+font-family: var(--secondary-font-family);
+}
+
+
+
+.codedby a:hover {
   transform: none;
 }
 
 /* About page */
-.about p {
+
+.about-wrapper {
+  padding: 40px 40px 0 40px;
+}
+
+.light-container h1 {
+  font-size: 45px !important;
+  line-height: 46px !important;
+  margin-top: 70px !important;
+}
+
+.light-container h2 {
   font-size: 14px;
 }
 
-.about-subheading {
-  font-size: 16px !important; 
-  font-weight: bold;
-  font-family: var(--heading-font-family);
+.light-container p {
+  font-size: 12px;
+  font-weight: 200;
+  font-family: var(--secondary-font-family) !important;
 }
 
-.content-container {
-  padding: 20px;
-}
-
-.about-wrapper {
-  padding: 30px 40px;
+.quote {
+  font-size: 18px !important;
+  font-style: italic;
+  font-family: var(--heading-font-family) !important;
 }
 
 .contact-box {
@@ -127,23 +152,15 @@ font-size: 15px;
 
 .contact-box h2 {
   font-family: var(--heading-font-family);
-  line-height: 22px !important;
-  font-size: 22px !important;
+  line-height: 20px !important;
+  font-size: 20px !important;
 }
 
 .contact-box p {
-  font-family: var(--default-font-family);
-  font-size: 13px !important;
-  line-height: 17px;
+  font-family: var(--secondary-font-familydefault-font-family);
+  font-size: 10px !important;
+  line-height: 15px;
 }
-
-.quote {
-  font-size: 15px;
-  font-style: italic;
-  font-family: var(--heading-font-family) !important;
-}
-
-
 
 
 /* Main button */
@@ -152,7 +169,7 @@ font-size: 15px;
   font-family: var(--heading-font-family);
   font-size: 10px !important;
   letter-spacing: 2px;
-  padding: 15px 22px !important;
+  padding: 12px 20px !important;
   font-size: 9px;
   color: #000000;
   border-radius: 2px !important;
@@ -183,10 +200,10 @@ font-size: 15px;
     background-color: white;
     font-family: var(--secondary-font-family);
     color: var(--dark-color);
-    padding: 6px 12px !important;
+    padding: 8px 12px !important;
     border-radius:0% !important;
     border: solid 1px var(--branding-secundary-color);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .btn-light:hover {
@@ -199,7 +216,7 @@ font-size: 15px;
 }
 
 .content h1 {
-  line-height: 60px;
+  line-height: 50px;
   font-size: 45px;
 }
 
@@ -218,42 +235,42 @@ font-size: 15px;
 
 /* Work page */
 
+.heading-work {
+  text-align: center;
+  font-size: 30px !important;
+  line-height: 36px !important;
+}
+
 .work-wrapper {
   padding: 40px  40px 0 40px;
 }
 
-#heading-work {
-  font-size: 40px;
-  line-height: 50px;
-  margin-bottom: 50px;
-}
 
 .featured-projects {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px;
   font-family: var(--heading-font-family) !important;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: var(--soft-color);
   padding: 20px;
 }
 
-.projects-grid h3,
-.graphic-design-grid h3 {
-  font-family: var(--secondary-font-family); 
-  font-size: 14px !important; 
-  color: var(--dark-color);
-  margin: 0;
-}
-
 .projects-grid p,
 .graphic-design-grid p {
-  font-family: var(--default-font-family);
+  font-family: var(--secondary-font-familyy);
   font-size: 11px;
 }
 
-#featured-projects-work {
-  font-family: var(--default-font-family);
+.projects-grid h2 {
+  font-size: 16px;
+  margin-top: 18px;
 }
+
+.graphic-design-grid h2 {
+  font-size: 16px;
+    margin-top: 18px;
+}
+
 
 /* Contact page */
 
@@ -268,7 +285,8 @@ font-size: 15px;
 }
 
 .contact-container p {
-  font-family: var(--secondary-font-family);
+  font-family: var(--default-font-family);
+  font-style: italic;
   letter-spacing: 1px;
   font-size: 12px;
 }
@@ -277,10 +295,6 @@ font-size: 15px;
   background: var(--branding-color);
 }
 
-#portfolio-button {
-  padding: 5px 7px;
-  font-size: 8px;
-}
 
 .social a{
   font-size: 20px;
@@ -299,7 +313,6 @@ a {
 }
 
 a:hover {
-
 color: var(--dark-color);
 }
 
@@ -313,9 +326,10 @@ footer {
 
 footer p a {
   text-decoration: none;
-  font-family: var(--secondary-font-family);
+  font-family: var(--default-font-family);
+  font-style: italic;
   color: var(--branding-secundary-color);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 1px;
   transition: all 150ms ease-in-out;
 }
@@ -366,18 +380,17 @@ footer .social-links a:hover {
 
 /* Media queries */
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
 
   h1 {
     font-size: 35px;
     margin-bottom: 10px;
     margin-top: 25px;
-    line-height: 35px;
+    line-height: 40px;
   }
     
   h2 {
     font-size: 10px;
-    
   }
 
   h3 {
@@ -386,7 +399,7 @@ footer .social-links a:hover {
   }
     
   p {
-    font-size: 12px;
+    font-size: 10px;
     }
 
   .contact-box #contact-button {
@@ -398,7 +411,6 @@ footer .social-links a:hover {
     font-size: 8px;
     line-height: 9px;
   }
-
   
   .contact-box h2{
     font-size: 23px;
@@ -420,23 +432,47 @@ footer .social-links a:hover {
     text-align: center;
     }
 
-  .container-projects h3 {
-    font-family: var(--heading-font-family);
-    color: var(--dark-color);
-    font-size: 16px;
-    }
+
 
   .content {
-    text-align: center;
-    }
-
-  .content-container {
     text-align: center;
     }
 
   .logo-bigger {
     max-height: 100px;
     }
+
+
+.light-container h1 {
+  margin-top: 70px !important;
+  font-size: 35px !important;
+  text-align: center;
+}
+
+.light-container h2 {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 5px !important;
+  text-align: center;
+}
+
+.light-container p {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 16px !important;
+  line-height: 18px;
+}
+
+.heading-work {
+  text-align: center;
+  font-size: 25px !important;
+  line-height: 26px !important;
+}
+
 
   footer .social-links a {
     margin: 0 5px;
@@ -448,12 +484,11 @@ footer .social-links a:hover {
     }
 
   footer .contact-box {
+    font-family: var(--branding-secundary-color);
     padding: 20px 40px;
     }
 
-    .codedby {
-      padding: 20px;
-    }
+    
+  
 }
 
-/* ^^^^ Ending media queries */
