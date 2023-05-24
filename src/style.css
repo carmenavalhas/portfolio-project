@@ -92,30 +92,6 @@ line-height: 20px;
 font-size: 14px;
 }
 
-
-.codedby {
-  margin: 20px;
-}
-
-.codedby p {
-  font-family: var(--secondary-font-family);
-  letter-spacing: normal;
-  font-size: 11px;
-}
-
-.codedby a {
-letter-spacing: normal;
-font-size: 11px;
-font-style: normal;  
-font-family: var(--secondary-font-family);
-}
-
-
-
-.codedby a:hover {
-  transform: none;
-}
-
 /* About page */
 
 .about-wrapper {
@@ -146,8 +122,8 @@ font-family: var(--secondary-font-family);
 
 .contact-box {
   background: var(--soft-color);
-  padding: 20px 60px;
-  margin: 20px auto;
+  padding: 40px 40px;
+  margin: 30px auto 0 auto;
 }
 
 .contact-box h2 {
@@ -271,6 +247,9 @@ font-family: var(--secondary-font-family);
     margin-top: 18px;
 }
 
+.coded-by {
+  letter-spacing: normal;
+}
 
 /* Contact page */
 
@@ -289,6 +268,15 @@ font-family: var(--secondary-font-family);
   font-style: italic;
   letter-spacing: 1px;
   font-size: 12px;
+}
+
+.contact-container h2 {
+  line-height: 20px;
+}
+
+.contact-container p {
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .project-wrapper {
