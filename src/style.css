@@ -122,8 +122,8 @@ font-size: 14px;
 
 .contact-box {
   background: var(--soft-color);
-  padding: 40px 40px;
-  margin: 30px auto 0 auto;
+  padding: 40px 60px;
+  margin-top: 20px;
 }
 
 .contact-box h2 {
@@ -180,6 +180,10 @@ font-size: 14px;
     border-radius:0% !important;
     border: solid 1px var(--branding-secundary-color);
     letter-spacing: 1px;
+}
+
+.view-work-btn {
+    font-size: 10px;
 }
 
 .btn-light:hover {
@@ -328,7 +332,6 @@ footer p a:hover {
 }
 
 footer .social-links a {
-  margin: 0 5px;
   color: var(--branding-secundary-color);
   background: var(--soft-color);
   padding: 10px 15px;
@@ -390,18 +393,13 @@ footer .social-links a:hover {
     font-size: 10px;
     }
 
-  .contact-box #contact-button {
-    padding: 8px;
-    font-size: 8px;
-    }
-
-  #work-with-me-button {
-    font-size: 8px;
+.view-work-btn {
+    font-size: 9px;
     line-height: 9px;
   }
   
   .contact-box h2{
-    font-size: 23px;
+    font-size: 22px;
     line-height: 18px;
     }
 
@@ -414,6 +412,7 @@ footer .social-links a:hover {
     font-size: 9px;
     padding: 4px 15px;
     }
+  
 
   .project-description {
     padding: 0;
@@ -477,6 +476,6 @@ footer .social-links a:hover {
     }
 
     
-  
+
 }
 
